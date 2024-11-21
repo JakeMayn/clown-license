@@ -17,22 +17,16 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-l">
-        What is your full name?
+        Heading or question goes here
       </h1>
 
-      <form class="form" action="/public-facing/date-of-birth" method="post">
+      <form class="form" action="/path/of/next/page" method="post">
 
-        {% from "govuk/components/input/macro.njk" import govukInput %}
-
-{{ govukInput({
-  label: {
-    text: "Full name"
-  },
-  id: "full-name",
-  name: "fullName",
-  autocomplete: "name",
-  spellcheck: false
-}) }}
+        <p>
+          [Insert question content here - see the
+          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
+          for examples]
+        </p>
 
         {{ govukButton({
           text: "Continue"
